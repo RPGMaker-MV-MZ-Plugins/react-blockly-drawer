@@ -28,7 +28,7 @@
   "author": "Victor Trejo",
   "license": "ISC",
   "dependencies": {
-    "node-blockly": "^1.2.8",
+    "node-blockly": "https://github.com/RPGMaker-MV-MZ-Plugins/node-blockly#0ea4077d251ae5a729de7ef206b47908646d1fca",
     "prop-types": "^15.7.2",
     "react": "^17.0.1"
   },
