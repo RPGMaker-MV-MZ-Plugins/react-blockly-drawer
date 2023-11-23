@@ -18,6 +18,12 @@ export const Field = (p) => {
     return React.createElement("field", props, children);
 };
 
+export const Sep = (p) => {
+    const { children, ...props } = p;
+    props.is = "blockly";
+    return React.createElement("sep", props, children);
+};
+
 
 class XmlComponent extends Component {
     render() {
@@ -39,5 +45,6 @@ export default {
     Block,
     Xml,
     Category,
-    Field
+    Field,
+    Sep
 };

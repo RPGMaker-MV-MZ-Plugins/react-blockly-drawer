@@ -5,5 +5,6 @@ export const Xml = tags.Xml;
 export const Block = tags.Block;
 export const Category = tags.Category;
 export const Field = tags.Field;
+export const Sep = tags.Sep;
 
 export default BlocklyDrawer;

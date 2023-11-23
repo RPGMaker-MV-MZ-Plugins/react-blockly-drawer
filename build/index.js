@@ -4,7 +4,7 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.Xml = exports.Field = exports.Category = exports.Block = void 0;
+exports["default"] = exports.Xml = exports.Sep = exports.Field = exports.Category = exports.Block = void 0;
 var _BlocklyDrawer = _interopRequireDefault(require("./BlocklyDrawer"));
 var tags = _interopRequireWildcard(require("./ToolBoxTagsComponents"));
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
@@ -14,4 +14,5 @@ var Xml = exports.Xml = tags.Xml;
 var Block = exports.Block = tags.Block;
 var Category = exports.Category = tags.Category;
 var Field = exports.Field = tags.Field;
+var Sep = exports.Sep = tags.Sep;
 var _default = exports["default"] = _BlocklyDrawer["default"];

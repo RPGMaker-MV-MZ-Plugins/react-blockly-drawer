@@ -4,11 +4,12 @@ function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports["default"] = exports.Xml = exports.Field = exports.Category = exports.Block = void 0;
+exports["default"] = exports.Xml = exports.Sep = exports.Field = exports.Category = exports.Block = void 0;
 var _react = _interopRequireWildcard(require("react"));
 var _excluded = ["children"],
   _excluded2 = ["children"],
-  _excluded3 = ["children"];
+  _excluded3 = ["children"],
+  _excluded4 = ["children"];
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != _typeof(e) && "function" != typeof e) return { "default": e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && Object.prototype.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n["default"] = e, t && t.set(e, n), n; }
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -43,6 +44,12 @@ var Field = exports.Field = function Field(p) {
   props.is = "blockly";
   return /*#__PURE__*/_react["default"].createElement("field", props, children);
 };
+var Sep = exports.Sep = function Sep(p) {
+  var children = p.children,
+    props = _objectWithoutProperties(p, _excluded4);
+  props.is = "blockly";
+  return /*#__PURE__*/_react["default"].createElement("sep", props, children);
+};
 var XmlComponent = /*#__PURE__*/function (_Component) {
   _inherits(XmlComponent, _Component);
   var _super = _createSuper(XmlComponent);
@@ -72,5 +79,6 @@ var _default = exports["default"] = {
   Block: Block,
   Xml: Xml,
   Category: Category,
-  Field: Field
+  Field: Field,
+  Sep: Sep
 };
