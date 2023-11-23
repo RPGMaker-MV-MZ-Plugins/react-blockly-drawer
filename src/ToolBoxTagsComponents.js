@@ -12,6 +12,12 @@ export const Category = (p) => {
     return React.createElement("category", props, children);
 };
 
+export const Field = (p) => {
+    const { children, ...props } = p;
+    props.is = "blockly";
+    return React.createElement("field", props, children);
+};
+
 
 class XmlComponent extends Component {
     render() {
@@ -32,5 +38,6 @@ export const Xml = XmlComponent;
 export default {
     Block,
     Xml,
-    Category
+    Category,
+    Field
 };
