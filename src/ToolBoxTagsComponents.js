@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 
+export const Mutation = (p) => {
+    const { children, ...props } = p;
+    props.is = "blockly";
+    return React.createElement("mutation", props, children);
+}
+
 export const Block = (p) => {
     const { children, ...props } = p;
     props.is = "blockly";
@@ -16,6 +22,18 @@ export const Field = (p) => {
     const { children, ...props } = p;
     props.is = "blockly";
     return React.createElement("field", props, children);
+};
+
+export const Value = (p) => {
+    const { children, ...props } = p;
+    props.is = "blockly";
+    return React.createElement("value", props, children);
+};
+
+export const Shadow = (p) => {
+    const { children, ...props } = p;
+    props.is = "blockly";
+    return React.createElement("shadow", props, children);
 };
 
 export const Sep = (p) => {
@@ -42,9 +60,12 @@ class XmlComponent extends Component {
 export const Xml = XmlComponent;
 
 export default {
+    Mutation,
     Block,
     Xml,
     Category,
     Field,
-    Sep
+    Value,
+    Shadow,
+    Sep,
 };
